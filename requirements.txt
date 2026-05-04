@@ -1,0 +1,29 @@
+# Core
+pydantic>=2.5.0
+torch>=2.1.0
+transformers>=4.36.0
+sentence-transformers>=2.2.0
+accelerate>=0.25.0
+
+# Database
+psycopg2-binary>=2.9.9
+pgvector>=0.2.4
+sqlalchemy>=2.0.0
+
+# Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# RAG evaluation
+ragas>=0.1.0
+datasets>=2.14.0
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-huggingface>=0.0.1
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+click>=8.1.0
+rich>=13.7.0
