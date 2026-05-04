@@ -26,9 +26,17 @@ class ModelConfig(BaseModel):
     llm_model: str = os.getenv("LLM_MODEL", "TinyLlama/TinyLlama-1.1B-Chat-v1.0")
     max_new_tokens: int = int(os.getenv("MAX_NEW_TOKENS", "512"))
 
+
+class RAGConfig(BaseModel):
+    chunk_size: int = int(os.getenv("CHUNK_SIZE", "512"))
+    chunk_overlap: int = int(os.getenv("CHUNK_OVERLAP", "64"))
+    top_k: int = int(os.getenv("TOP_K", "5"))
+
+
 class AppConfig(BaseModel):
     db: DatabaseConfig = DatabaseConfig()
     model: ModelConfig = ModelConfig()
+    rag: RAGConfig = RAGConfig()
 
 
 config = AppConfig()
