@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment
+.env
+
+# Data
+data/raw/
+data/eval_results/
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+pgdata/
+
+# Models (downloaded by HuggingFace)
+models/
